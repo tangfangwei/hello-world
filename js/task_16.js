@@ -34,41 +34,14 @@ function addAqiData() {
  * 渲染aqi-table表格
  */
 function renderAqiList() {
-	var aqiTable = document.getElementById("aqi-table");
-	aqiTable.innerHTML = "";
-
-	var tdDel = document.createElement("td");
-	var tdButton = document.createElement("button");
-	var trNode = document.createElement("tr");
-
-	var tdNodePro = document.createElement("td");
-	var tdNodeValue = document.createElement("td");
-	tdNodePro.innerText = "城市";
-	tdNodeValue.innerText = "空气质量";
-	tdDel.innerText = "操作";
-	trNode.appendChild(tdNodePro);
-	trNode.appendChild(tdNodeValue);
-	trNode.appendChild(tdDel);
-	aqiTable.appendChild(trNode);
-
-	for(var pro in aqiData){
-		trNode = document.createElement("tr");
-		tdNodePro = document.createElement("td");
-		tdNodeValue = document.createElement("td");
-		tdDel = document.createElement("td");
-		tdButton = document.createElement("button");
-
-		tdNodePro.innerText = pro;
-		tdNodeValue.innerText = aqiData[pro];
-		tdButton.innerText = "删除";
-		tdDel.appendChild(tdButton);
-
-		trNode.appendChild(tdNodePro);
-		trNode.appendChild(tdNodeValue);
-		trNode.appendChild(tdDel);
-		aqiTable.appendChild(trNode);	
+	var items = "<tr><td>城市</td><td>空气质量</td><td>操作</td></tr>";
+	for(var city in aqiData){
+		//items +="<tr><td>"+city+"</td><td>"+aqiData[city]+"</td><td><button data-city='"+city+"'>删除</button></td></tr>";
+		items +="<tr><td>"+city+"</td><td>"+aqiData[city]+"</td><td><button>删除</button></td></tr>";
 	}
-}
+	// console.log(items);
+	document.getElementById("aqi-table").innerHTML = city?items:"";
+}	
 
 /**
  * 点击add-btn时的处理逻辑
@@ -85,7 +58,7 @@ function addBtnHandle() {
  */
 function delBtnHandle(city) {
   // do sth.
-  console.log("delBtnHandle"+city);
+  // console.log("delBtnHandle"+city);
   delete aqiData[city];
   renderAqiList();
 }
@@ -95,15 +68,15 @@ function init() {
   // 在这下面给add-btn绑定一个点击事件，点击时触发addBtnHandle函数
   var addButton = document.getElementById("add-btn");
   addButton.onclick = addBtnHandle;
-
-  var aqiTable = document.getElementById("aqi-table");
-  aqiTable.onclick = function(){
-  	if(event.target.tagName.toLowerCase() === "button"){
-  		var cityNode = event.target.parentElement.parentElement;
-  		delBtnHandle(cityNode.children[0].innerText);
-  	}
-  };
+  
   // 想办法给aqi-table中的所有删除按钮绑定事件，触发delBtnHandle函数
+  var aqiTable = document.getElementById("aqi-table");
+  aqiTable.addEventListener("click",function(event){
+  	if(event.target.nodeName.toLowerCase() === "button"){
+  		console.log(event.target.dataset);
+  		delBtnHandle.call(null,event.target.dataset.city);
+  	}
+  });
 
 }
 
