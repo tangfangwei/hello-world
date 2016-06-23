@@ -1,0 +1,85 @@
+*{
+	margin:0;
+	padding: 0;
+}
+fieldset{
+	width: 1200px;
+	margin:0 auto;
+	border-radius: 15px;
+}
+.grade{
+	float: left;
+	margin-left:100px;
+}
+label{
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+}
+label span{
+	display: block;
+	border: 1px solid #16324a;
+	line-height: 50px;
+	text-align: center;
+	border-radius: 50%;
+}
+label input{
+	/*position: absolute;*/
+	/*width: 100%;
+	height: 100%;*/
+	opacity: 0;
+}
+.selected{
+	background-color: #16324a;
+	color: white;
+}
+.city{
+	float: left;
+	margin-left:100px;
+}
+#city-select{
+	line-height: 25px;
+	width: 110px;
+	height: 25px;
+	padding: 0 30px;
+	margin: 10px 0;
+	-webkit-appearance: none;
+	background-color: #ffffff;
+	font-size: .75rem;
+    letter-spacing: 10px;
+}
+#aqi-chart-wrap{
+	position: relative;
+    width: 1200px;
+    height: 600px;
+    margin: 50px auto;
+    box-shadow: 0px 0px 5px #999999;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.aqi-bar {
+	position: absolute;
+	bottom: 0;
+}
+.aqi-hint{
+	position: absolute;
+	width: 120px;
+	border:1px solid #16324a;
+	display: none;
+	font-size: .75rem;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 5px;
+    z-index: 999;
+    box-shadow: 0px 0px 5px #dddddd;
+    opacity: 0.8;
+}
+.show + div{
+	display: block;
+}
+.title{
+	text-align: center;
+	position: absolute;
+	width: 100%;
+	top:10px;
+}
