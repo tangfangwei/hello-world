@@ -134,57 +134,50 @@
 </article>
 <aside>
 	<h3>这里以后是一个侧栏，这是侧栏的标题</h3>
-	<table>
-		<tr>
-			<td class="left">请输入邮箱地址&nbsp;</td>
-			<td class="right"><input type="text" name="" value="这是一个文本输入框"></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td class="hint">邮箱地址请按要求格式输入</td>
-		</tr>
-		<tr>
-			<td class="left">请输入密码&nbsp;</td>
-			<td class="right"><input type="text" name="" value="这是一个文本输入框"></td>
-		</tr>
-		<tr>
-			<td class="left">请重复输入密码&nbsp;</td>
-			<td class="right"><input type="text" name="" value="这是一个文本输入框"></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td class="hint">密码请为6-16位英文数字</td>
-		</tr>
-		<tr>
-			<td>&nbsp;</td>
-			<td></td>
-		</tr>
-		<tr>
-			<td class="left">性别&nbsp;</td>
-			<td class="right"><input type="radio" name="sex">男<input type="radio" name="sex">女</td>
-		</tr>
-		<tr>
-			<td class="left">城市&nbsp;</td>
-			<td class="right">
-				<select>
-					<option selected="selected">北京</option>
-					<option>上海</option>
-					<option>成都</option>
-				</select>
-			</td>
-		</tr>
-		<tr>
-			<td class="left">爱好&nbsp;</td>
-			<td class="right"><input type="checkbox" name="">运动<input type="checkbox" name="">艺术<input type="checkbox" name="">科学</td>
-		</tr>
-		<tr>
-			<td class="left">个人描述&nbsp;</td>
-			<td class="right"><textarea>这是一个多行输入框，输入你的个人描述</textarea></td>
-		</tr>
-		<tr>
-			<td colspan="2"><input type="submit" class="submit" value="确认提交"></td>
-		</tr>
-	</table>
+	<div class="form">
+		<div>
+			<p class="record">请输入邮箱地址</p>
+			<input type="text" value="这是一个文本输入框">
+		</div>
+		<div>
+			<p class="hint">邮箱地址请按要求格式输入</p>
+		</div>
+		<div>
+			<p class="record">请输入密码</p>
+			<input type="text" value="这是一个文本输入框">
+		</div>
+		<div>
+			<p class="record">请重复输入密码</p>
+			<input type="text" value="这是一个文本输入框">
+		</div>
+		<div>
+			<p class="hint">密码请为6-16位英文数字</p>
+		</div>
+		<div>
+			<p class="record">性别</p>
+			<input type="radio" name="sex">男
+			<input type="radio" name="sex">女
+		</div>
+		<div>
+			<p class="record">城市</p>
+			<select>
+				<option selected="selected">北京</option>
+				<option>上海</option>
+				<option>成都</option>
+			</select>
+		</div>
+		<div>
+			<p class="record">爱好</p>
+			<input type="checkbox" name="">运动<input type="checkbox" name="">艺术<input type="checkbox" name="">科学
+		</div>
+	</div>
+	<div>
+		<p class="record">个人描述</p>
+		<textarea>这是一个多行输入框，输入你的个人描述</textarea>
+	</div>
+	<div>
+		<input type="submit" class="submit" ="" value="确认提交">
+	</div>
 </aside>
 <footer>
 	<p>版权所有@</p>
