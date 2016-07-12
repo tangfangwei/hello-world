@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>task_10</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	.flex_container{
+		margin: 0px;
+		padding: 20px;
+		display: flex;
+		/*flex-direction: row-reverse;*/
+		/*flex-wrap: wrap;*/
+		justify-content: space-around;
+		align-items: center;
+		flex:none;
+		border:1px solid gray;
+	}
+	li{
+		list-style: none;
+		margin-bottom: 10px;
+		width: 150px;
+	}
+	.flex1{
+		height: 120px;
+		border:1px solid red;
+		margin-right: 25px;
+	}
+	.flex2{
+		height: 100px;
+		border:1px solid red;
+		margin-right: 25px;
+	}
+	.flex3{
+		height: 40px;
+		border:1px solid red;
+		margin-right: 25px;
+	}
+	.flex4{
+		height: 200px;
+		border:1px solid blue;
+		margin-right: 25px;
+	}
+
+	@media all and (max-width: 640px){
+		.flex4{
+			order: -1;
+		}
+		.flex_container{
+			flex-wrap: wrap;
+			align-items: flex-start;
+		}
+	}
+	</style>
+</head>
+<body>
+<ul class="flex_container">
+	<li class="flex1"></li>
+	<li class="flex2"></li>
+	<li class="flex3"></li>
+	<li class="flex4"></li>
+</ul>
+</body>
+</html>
