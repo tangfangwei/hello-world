@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>task_22</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		#flex_container{
+			border:solid 1px black;
+			display: flex;
+			width: 1000px;
+			height: 300px;
+			margin:100px auto;
+			margin-bottom: 10px;
+			padding: 20px;
+			justify-content: space-between;
+		}
+		.flex1{
+			border:solid 1px red;
+			padding: 20px;
+			display: flex;
+			width: 450px;
+			height: 260px;
+			justify-content: space-between;
+		}
+		.flex11{
+			border:solid 1px green;
+			padding:20px;
+			width: 170px;
+			height: 220px;
+			display: flex;
+			justify-content: space-between;
+		}
+		.flex111{
+			border:solid 1px blue;
+			padding: 20px;
+			width:35px;
+			height: 180px;
+			justify-content: space-between;
+		}
+		input{
+			font-size: 30px;
+			margin-left:50px;
+		}
+	</style>
+</head>
+<body>
+<div id="flex_container">
+	<div class="flex1">
+		<div class="flex11">
+			<div class="flex111"></div>
+			<div class="flex111"></div>
+		</div>
+		<div class="flex11">
+			<div class="flex111"></div>
+			<div class="flex111"></div>
+		</div>
+	</div>
+	<div class="flex1">
+		<div class="flex11">
+			<div class="flex111"></div>
+			<div class="flex111"></div>
+		</div>
+		<div class="flex11">
+			<div class="flex111"></div>
+			<div class="flex111"></div>
+		</div>
+	</div>
+</div>
+<input type="button" value="前" id="pre">
+<input type="button" value="中" id="mid">
+<input type="button" value="后" id="last">
+<script type="text/javascript" src="../js/task_22.js"></script>
+</body>
+</html>
