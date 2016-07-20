@@ -1,0 +1,499 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: "微软雅黑";
+}
+#wrap{
+	width: 100%;
+}
+/*	头部	*/
+#header{
+	width: 100%;
+	height: 60px;
+}
+#header img{
+	margin-left: 60px;
+	margin-top:15px;
+}
+#header .logo{
+	display: inline-block;
+	font-size: 22px;
+	height: 60px;
+	line-height: 60px;
+	vertical-align: top;
+}
+#header .nav{
+	float: right;
+	list-style: none;
+}
+#header li{
+	float: left;
+	width: 70px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	margin-left: 60px;
+}
+#header li a{
+	color: #B3B3B3;
+	font-size: 14px;
+	text-decoration: none;
+}
+#header li a:hover{
+	color:black;
+}
+#header .firstPage{
+	border-bottom: 5px solid red;
+}
+#header .login{
+	float: right;
+	margin-right: 70px;
+}
+#header .login span{
+	display: inline-block;
+	font-size: 14px;
+	height: 60px;
+	line-height: 60px;
+	vertical-align: top;
+	color: #E35F72;
+}
+#header .loginImage{
+	margin-top: 22px;
+}
+/*	内容1  */
+#content1{
+	width: 100%;
+	position: relative;
+}
+#content1 .banner{
+	width: 100%;
+	height: 690px;
+}
+#content1 .life{
+	position: absolute;
+	margin-left: 115px;
+	margin-top: 200px;
+}
+#content1 .english{
+	font-size: 55px;
+	color: white;
+	font-weight: bold;
+	margin-bottom: 50px;
+}
+#content1 .chinese{
+	color: white;
+	font-size:25px;
+	font-family: "微软雅黑";
+	margin-bottom: 50px;
+}
+#content1 input{
+	width: 330px;
+	height: 65px;
+	background-color: #E74F4D;
+	color: white;
+	font-size: 30px;
+	font-family: "微软雅黑";
+	margin-top: 20px;
+	border:none;
+}
+#content1 input:hover{
+	background-color: white;
+	color: #E74F4D;
+}
+#content1 .bottomImage,#content1 .bottomText{
+	display: flex;
+	justify-content: space-around;
+	margin: 45px 0px;
+}
+#content1 .bottomText .flex{
+	border-right:1px solid #787476;
+	color: #848182;
+	font-family: "微软雅黑";
+	width: 420px;
+	text-align: center;
+	height: 50px;
+}
+#content1 .bottomText .flexLast{
+	border-right: none;
+}
+/*	内容2	*/
+#content2{
+	width: 100%;
+	text-align: center;
+	background-color: #EDEDED;
+}
+#content2 img{
+	margin-top: 90px;
+}
+#content2 .title{
+	font-size: 50px;
+	color: #979596;
+	font-family: "微软雅黑";
+	padding: 50px 0px 70px 0px;
+}
+#content2 .map{
+	background-image: url(../img/search_bac.jpg);
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 340px;
+	background-size: 100% auto;
+	color: #F7FFFF;
+}
+#content2 .map .find{
+	font-size: 20px;
+	padding-top: 55px;
+}
+#content2 .map .line{
+	font-size: 20px;
+}
+#content2 .map .tip{
+	font-size: 8px;
+}
+
+#content2 .place{
+	margin-top:55px;
+}
+#content2 .selectTest,#content2 .searchButton{
+	width: 235px;
+	height: 35px;
+	border: none;
+}
+#content2 .selHid{
+	display: inline-block;
+	width: 210px;
+	overflow: hidden;
+}
+#content2 .selBg{
+	width: 235px;
+	height: 35px;
+	margin-right: 25px;
+	background: url("../img/btnb.png") #fff no-repeat 210px center;
+	display: inline-block;
+	text-align: left;
+}
+#content2 .selHidButton{
+	display: inline-block;
+	vertical-align: top;
+}
+#content2 .searchButton{
+	width: 235px;
+	height: 35px;
+	color: white;
+	font-size: 16px;
+	letter-spacing: 1em;
+	background-color: #BE4E48;
+}
+/* show模块 */
+#show{
+	display: flex;
+	justify-content: center;
+	background-color: #F7F7F7;
+	padding:105px 0px 85px 0px; 
+}
+#show .flex{
+	margin-right: 45px;
+}
+#show img{
+	border:1px solid #DCDCDD;
+	padding: 15px 10px;
+	border-bottom: none;
+}
+#show .city{
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	height: 50px;
+	line-height: 50px;
+}
+#show .item{
+	text-align: center;
+	color: #828281;
+	font-size: 12px;
+	height: 20px;
+	line-height: 20px;
+}
+/*	dog   */
+#newWorld{
+	width: 100%;
+	overflow: hidden;
+}
+#newWorld .left{
+	width: 65%;
+}
+#newWorld .dog{
+	background-image: url(../img/info1_bac.jpg);
+	background-repeat: no-repeat;
+	/*width: 65%;*/
+	height: 565px;
+	background-size: 100% 565px;
+	text-align: center;
+	color: white;
+}
+#newWorld .dog .title{
+	font-size: 40px;
+	padding-top: 125px;
+}
+#newWorld .dog .time{
+	font-size: 150px;
+	height: 150px;
+	line-height: 150px;
+}
+#newWorld .dog .beijing{
+	font-size: 18px;
+}
+#newWorld .dog .date{
+	font-size: 18px;
+}
+#newWorld .world1{
+	float: right;
+	text-align: center;
+	width: 35%;
+	height: 565px
+}
+#newWorld .world1 .title{
+	margin-top: 150px;
+	font-size: 18px;
+	font-weight: bold;
+	font-family: "宋体";
+	margin-bottom: 35px;
+}
+#newWorld .world1 span{
+	color: #E7504E;
+}
+#newWorld .world1 .text{
+	font-size: 8px;
+	font-family: "宋体";
+	color: #ACA7A7;
+	margin-bottom: 50px;
+	margin-left: 135px;
+	text-align: left;
+}
+#newWorld .world1 .more{
+	border: 1px solid #E4676A;
+	width: 105px;
+	height: 33px;
+	line-height: 33px;
+	color: #E4676A;
+	font-family: "宋体";
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+#newWorld .world1 .more:hover{
+	background-color: #E4676A;
+	color: white;
+}
+#newWorld .world1 .first{
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+	background-color: #929292;
+	border-radius: 7px;
+	margin-right: 10px;
+}
+#newWorld .world1 .then{
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+	border-radius: 6px;
+	border: 1px solid #929292;
+	margin-right: 10px;
+}
+#newWorld .left{
+	float: left;
+}
+#newWorld .leftBottom{
+	width: 50%;
+	height: 520px;
+	background-color: #E8504e;
+	float: left;
+	text-align: center;
+	color: white;
+}
+#newWorld .rightBottom{
+	width: 50%;
+	height: 520px;
+	float: right;
+	text-align: center;
+/*	border:1px solid red;*/
+}
+#newWorld .titleBottom{
+	padding-top: 170px;
+	font-size: 22px;
+	font-weight: bold;
+}
+#newWorld .textBottom{
+	font-size: 20px;
+	font-family: "黑体";
+}
+#newWorld .lineBottom{
+	font-size: 18px;
+	padding-bottom: 30px;
+}
+#newWorld .moreBottom{
+	border: 1px solid white;
+	width: 170px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 20px;
+	margin: 0 auto;
+}
+#newWorld .leftBottom .moreBottom:hover{
+	color: #E8504e;
+	background-color: white;
+}
+#newWorld .rightBottom .moreBottom{
+	border:1px solid #E8504e;
+	color: #E8504e;
+}
+#newWorld .rightBottom .moreBottom:hover{
+	background-color: #E8504e;
+	color:white;
+}
+#newWorld .right{
+	background-image: url(../img/info2_bac.jpg);
+	background-size: 100% 520px;
+	background-repeat: no-repeat;
+	width: 35%;
+	height: 520px;
+	float: right;
+}
+/* 志愿者部分  */
+#join{
+	width: 1015px;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 120px;
+	overflow: hidden;
+}
+#join .title{
+	font-size: 20px;
+	font-family: "黑体";
+	font-weight: bold;
+}
+#join .line{
+	color: #EA6664;
+	margin-bottom: 20px;
+}
+#join .textTop{
+	font-size: 8px;
+	color: #B1A8B1;
+	margin-bottom: 110px;
+}
+#join .left{
+	float: left;
+	text-align: left;
+	width: 300px;
+}
+#join .left .title{
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 25px;
+}
+#join .left .text{
+	font-size: 12px;
+	line-height: 12px;
+	font-family: "宋体";
+	color: #BCBCBC;
+}
+#join .left .more{
+	font-size: 8px;
+	text-align: right;
+	margin-bottom: 40px;
+}
+#join .left .more a{
+	text-decoration: none;
+	color: #BCBCBC;
+}
+#join .right{
+	float: right;
+	width: 700px;
+	text-align: right;
+}
+#join .right input{
+	width: 280px;
+	height: 40px;
+	padding: 0px 15px;
+	background-color: #EDEDEF;
+	font-size: 12px;
+	color: #A9A9A9;
+	border:none;
+	margin: 0px 0px 15px 20px;
+}
+#join .right textarea{
+	width: 610px;
+	height: 120px;
+	padding: 10px 15px 0px 15px;
+	border: none;
+	background-color: #EDEDEF;
+	font-size: 12px;
+	color: #A9A9A9;
+	margin-bottom: 15px;
+}
+#join .right .submit{
+	width: 640px;
+	text-align: center;
+	color: black;
+	margin-bottom: 150px;
+}
+/*  contact  */
+#contact{
+	width: 100%;
+	background-color: #33363F;
+	color: white;
+	text-align: center;
+	padding-top: 70px;
+}
+#contact .title{
+	font-size: 20px;
+	font-family: "黑体";
+	height: 60px;
+	line-height: 70px;
+}
+#contact .text{
+	font-size: 12px;
+	line-height: 25px;
+	font-family: "宋体";
+	margin-bottom: 30px;
+}
+#contact .email{
+	width: 400px;
+	height: 40px;
+	margin-bottom: 35px;
+	border: none;
+	color: #AEA9A9;
+	padding: 0px 15px;
+}
+#contact .submit{
+	width: 80px;
+	background-color: #707278;
+	height: 40px;
+	border: none;
+	color: white;
+	font-size: 14px;
+}
+#contact img{
+	margin-right: 35px;
+	margin-bottom: 50px;
+}
+/*  bottom  */
+#bottom{
+	width: 100%;
+	height: 60px;
+	background-color: #303039;
+}
+#bottom .left{
+	float: left;
+	margin-top: 30px;
+	margin-left: 100px;
+	color: white;
+	font-size: 12px;
+	font-family: "宋体";
+}
+#bottom .right{
+	float: right;
+	margin-top: 30px;
+	margin-right: 40px;
+	color: white;
+	font-size: 12px;
+	font-family: "宋体";
+}
