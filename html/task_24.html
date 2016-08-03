@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>task24</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		#super{
+			width:1300px;
+			/*height: 300px;*/
+			border:1px solid black;
+			display: flex;
+			padding: 20px;
+			justify-content: flex-start;
+			flex-wrap:wrap;
+		}
+		.flex{
+			display: flex;
+			border:1px solid black;
+			padding: 20px;
+			justify-content: space-between;
+			margin-bottom: 20px;
+			margin-right: 20px;
+			background-color: white;
+		}
+		#operate{
+			width: 800px;
+			margin:30px auto;
+		}
+	</style>
+</head>
+<body>
+<div id="super">
+	Super
+	<div class="flex">Cat
+		<div class="flex">Apple
+			<div class="flex">Pear</div>
+			<div class="flex">Pig</div>
+			<div class="flex">Cola</div>
+			<div class="flex">Soccer</div>
+		</div>
+		<div class="flex">Phone</div>
+		<div class="flex">
+			<div class="flex">Book</div>
+			<div class="flex">School</div>
+		</div>
+	</div>
+	<div class="flex">Fish</div>
+	<div class="flex">Note
+		<div class="flex">Human
+			<div class="flex">Code</div>
+			<div class="flex">Operate</div>
+			<div class="flex">Man</div>
+		</div>
+		<div class="flex">Program
+			<div class="flex">Bement
+ 				<div class="flex">Cat</div>
+			</div>
+			<div class="flex">Glass</div>
+		</div>
+	</div>
+</div>
+<div id="operate">
+	<button id="delete">删除选中节点及所有子节点</button>
+	<input type="text" id="add" value=""/>
+	<button id="addButton">在选中节点下增加子节点</button>
+	<button id="deepButton">遍历多叉树</button>
+	<input type="text" id="searchData" />
+	<button id="search">开始查询</button>
+</div>
+<script type="text/javascript" src="../js/task_24.js"></script>
+</body>
+</html>
