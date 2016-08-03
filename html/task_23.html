@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>task23</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		#super{
+			width:1300px;
+			/*height: 300px;*/
+			border:1px solid black;
+			display: flex;
+			padding: 20px;
+			justify-content: flex-start;
+			flex-wrap:wrap;
+		}
+		.flex1{
+			display: flex;
+			border:1px solid black;
+			padding: 20px;
+			justify-content: space-between;
+			margin-bottom: 20px;
+			margin-right: 20px;
+		}
+		.flex11{
+			display: flex;
+			border:1px solid black;
+			padding: 20px;
+			justify-content: space-between;
+			margin-right: 20px;
+		}
+		.flex111{
+			display: flex;
+			/*width: 70px;
+			height: 60px;*/
+			border:1px solid black;
+			padding: 20px;
+			justify-content: space-between;
+			margin-right: 20px;
+		}
+		.flex1111{
+			border:1px solid black;
+			padding: 20px;
+		}
+		#search{
+			width: 600px;
+			margin:30px auto;
+		}
+	</style>
+</head>
+<body>
+<div id="search">
+	<button id="deepList">深度优先遍历</button>
+	<button id="widthList">广度优先遍历</button>
+	<input type="text" id="find" />
+	<button id="deepSearch">深度优先搜索</button>
+	<button id="widthSearch">广度优先搜索</button>	
+</div>
+<div id="super">
+	Super
+	<div class="flex1">Cat
+		<div class="flex11">Apple
+			<div class="flex111">Pear</div>
+			<div class="flex111">Pig</div>
+			<div class="flex111">Cola</div>
+			<div class="flex111">Soccer</div>
+		</div>
+		<div class="flex11">Phone</div>
+		<div class="flex11">
+			<div class="flex111">Book</div>
+			<div class="flex111">School</div>
+		</div>
+	</div>
+	<div class="flex1">Fish</div>
+	<div class="flex1">Note
+		<div class="flex11">Human
+			<div class="flex111">Code</div>
+			<div class="flex111">Operate</div>
+			<div class="flex111">Man</div>
+		</div>
+		<div class="flex11">Program
+			<div class="flex111">Bement
+ 				<div class="flex1111">Cat</div>
+			</div>
+			<div class="flex111">Glass</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="../js/task_23.js"></script>
+</body>
+</html>
