@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>task25</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		#top{
+			margin-top: 20px;
+		}
+		#tree{
+			width: 450px;
+			border:1px solid black;
+			margin:0 auto;
+		}
+		.show{
+			display: block;
+		}
+		.hide{
+			display: none;
+		}
+		ul li{
+			list-style: none;
+			cursor: pointer;
+		}
+		.arrowDown{
+			display: inline-block;
+			border-top: 10px solid #6898C2;
+			border-left:5px solid transparent;
+			border-right:5px solid transparent;
+		}
+		.arrowRight{
+			display: inline-block;
+			border-left: 10px solid #6898C2;
+			border-top: 5px solid transparent;
+			border-bottom: 5px solid transparent;
+		}
+		.emptyArrow{
+			display: none;
+		}
+		img{
+			margin-left: 50px;
+			margin-bottom: -4px;
+			display: none;
+		}
+		.delete{
+			margin-left: 0px;
+		}
+		li:hover>img{
+			display: inline-block;
+		}
+		#findResult{
+			text-align: center;
+			font-size: 12px;
+		}
+	</style>
+</head>
+<body>
+<div>
+	<div id="tree">
+		<div id="top">
+			<input type="text" id="data"/><button id="search">搜索</button><button id="reset">清除</button>
+			<p id="findResult"></p>
+		</div>
+		<ul id="nav">
+			<li><span></span>前端工程师<img src="../img/add.png" class="add" /></li>
+			<ul class="show">
+				<li><span></span>技术<img src="../img/add.png" class="add"/><img src="../img/delete.png" class="delete" /></li>
+				<ul class="hide">
+					<li><span></span>HTML5<img src="../img/add.png" class="add"/><img src="../img/delete.png" class="delete" /></li>
+					<li><span></span>CSS3<img src="../img/add.png" class="add"/><img src="../img/delete.png" class="delete" /></li>
+					<li><span></span>JavaScript<img src="../img/add.png" class="add"/><img src="../img/delete.png" class="delete" /></li>
+					<li><span></span>PHP<img src="../img/add.png" class="add"/><img src="../img/delete.png" class="delete" /></li>
+					<li><span></span>Node.JS<img src="../img/add.png" class="add"/><img src="../img/delete.png" class="delete" /></li>
+					<ul class="hide">
+						<li><span></span>JavaScript<img src="../img/add.png" class="add"/><img src="../img/delete.png" class="delete" /></li>
+					</ul>
+				</ul>
+		
+				<li><span></span>IT公司<img src="../img/add.png" class="add"/><img src="../img/delete.png" class="delete" /></li>
+				<ul class="hide">
+					<li><span></span>百度<img src="../img/add.png" class="add"/><img src="../img/delete.png" class="delete" /></li>
+					<li><span></span>腾讯<img src="../img/add.png" class="add"/><img src="../img/delete.png" class="delete" /></li>
+					<li><span></span>阿里<img src="../img/add.png" class="add"/><img src="../img/delete.png" class="delete" /></li>
+				</ul>
+				
+				<li><span></span>谈笑风生<img src="../img/add.png" class="add"/><img src="../img/delete.png" class="delete" /></li>
+				<ul class="hide">
+					<li><span></span>身经百战<img src="../img/add.png" class="add"/><img src="../img/delete.png" class="delete" /></li>
+					<li><span></span>学习一个<img src="../img/add.png" class="add"/><img src="../img/delete.png" class="delete" /></li>
+					<li><span></span>吟两首诗<img src="../img/add.png" class="add"/><img src="../img/delete.png" class="delete" /></li>
+					<ul class="hide">
+						<li><span></span>苟利国家生死以<img src="../img/add.png" class="add"/><img src="../img/delete.png" class="delete" /></li>
+					</ul>
+				</ul>
+			</ul>
+
+		</ul>
+	</div>
+</div>
+<script type="text/javascript" src="../js/task_25.js"></script>
+</body>
+</html>
